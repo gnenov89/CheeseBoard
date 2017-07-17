@@ -1,0 +1,131 @@
+body {
+background: url("../images/back.jpg");
+font-family: Impact, Charcoal, sans-serif;
+
+}
+ header {
+ color: skyblue;
+ background: #A9A9A9;
+ width: 30%;
+ font-family: Impact, Charcoal, sans-serif;
+ font-size: 30px;
+ margin:5px;
+ }
+
+
+
+
+.container{
+	max-width: 50%;
+    
+
+}
+
+.area-main{
+background:#F08080;
+height: 400px;
+margin: 5px;
+
+}
+
+.area-left{
+
+color: white;
+background: #FFA07A;
+float:left;
+width:60%;
+margin-top: 10px;
+margin-left: 5px;
+text-align: center;
+
+}
+
+li {
+    
+ display:inline-block;
+ background:#20B2AA;
+ height: 80px;
+ padding-top: 40px;
+ margin-top: 10px;
+
+}
+
+ #feta { 
+background: url("../images/feta.jpg");
+width: 100px;
+height: 80px;
+}
+#mozarella{
+background: url("../images/mozzarella.jpg");
+width: 100px;
+height: 80px;
+}
+#gorgonzola{
+	background: url("../images/talegio.jpg");
+width: 100px;
+height: 80px;
+}
+
+#talegio{
+background: url("../images/pecorino.jpg");
+width: 100px;
+height: 80px;
+}
+
+.area-right{
+
+color: white;
+background: #90EE90;
+float:right;
+width: 36%;
+margin-top: 10px;
+text-align: center;
+margin-left: 4
+}
+
+
+
+
+.cheese-board
+{
+
+color: yellow;
+clear:both;
+text-align: center;
+margin-bottom: 30px;
+margin-top: 30px;
+
+
+}
+
+
+
+
+
+.score{
+color: red;
+width: 100%;
+
+}
+h5{
+height: 30px;
+width: 120px;
+background: #20B2AA;
+margin-bottom: 5px;
+margin-left: 5px;
+padding-top: 20px;
+text-align: center;
+
+
+}   
+
+h6{
+height: 70px;
+width: 120px;
+background: #20B2AA;
+text-align: center;
+padding-top:40px;
+margin: 5px;
+
+
+}
