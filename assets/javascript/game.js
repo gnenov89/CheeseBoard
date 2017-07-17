@@ -1,4 +1,6 @@
+
 $ (document).ready(function(){
+
 
 	// 4 diamonds - rand 1-12
 	// goal rand 19-120
@@ -18,7 +20,7 @@ $ (document).ready(function(){
   
   var userLoses = "";
   
-  var currentScore = 0;
+  var currentScore = "";
 
   $("#putka>h1").html(goalScore);
   $("#current-score>h6").html(currentScore);
@@ -42,21 +44,34 @@ $("#talegio").click(function(){
 
     currentScore = currentScore + cheeseBoard[3];
     $("#current-score>h6").html(currentScore);
+
+
+
 });
-    // Wins
+
+if (currentScore = goalScore) {
+
+    $("#wins").text(userWins++);
+
+} else if (currentScore < goalScore){
+
+	$("#losses").text(userLosses++);
+
+
+};
+
 	
-
-
+	
 
 	// Losses
 
 
-if (goalScore = currentScore){
+// if (goalScore < currentScore){
+// 	userWins++;
 
 
 
 
-};
 
 
 
