@@ -6,7 +6,7 @@ $ (document).ready(function(){
 	// goal rand 19-120
 	//score board
     //wins 
-    // osses
+    // losses
 
   var cheeseBoard = ["feta", "mozarella","gorgonzola","talegio"];
 
@@ -16,9 +16,10 @@ $ (document).ready(function(){
 
   var goalScore = Math.floor(Math.random() * 120) + 1;
   
-  var userWins = 1;
+  var userWins = 0;
+  // for test 
   console.log("number " + userWins);
-  var userLoses = "";
+  var userLosses = 0;
   
   var currentScore = "";
 
@@ -58,30 +59,24 @@ $("#talegio").click(function(){
 
 
 });
+ 
 
+ 
 // this will/should add to the Wins section
 
 if (currentScore = goalScore) {
-
-    $("#wins").text(userWins++);
-
+    $("#wins").html("userWins");
+  }
  // this will add to the Losses section
 
-} else if (currentScore < goalScore){
+ else {
+  $("#losses").html("userLosses");
+  console.log("it's working!")
+}
 
-	$("#losses").text(userLosses++);
 
-
-};
 
 	
-	
-
-	// Losses
-
-
-// if (goalScore < currentScore){
-// 	userWins++;
 
 
 
