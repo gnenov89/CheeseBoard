@@ -21,7 +21,7 @@ $ (document).ready(function(){
   console.log("number " + userWins);
   var userLosses = 0;
   
-  var currentScore = "";
+  var currentScore = 0;
 
 // Changes the Goal score section by selecting an id in the html file
   $("#putka>h1").html(goalScore);
@@ -34,6 +34,7 @@ $ (document).ready(function(){
   
     currentScore = currentScore + cheeseBoard[0];
     $("#current-score>h6").html(currentScore);
+    checkWin();
 });
   // Generates a random number on click 
 
@@ -41,6 +42,7 @@ $("#mozarella").click(function(){
 
     currentScore = currentScore + cheeseBoard[1];
     $("#current-score>h6").html(currentScore);
+    checkWin();
 });
 // Generates a random number on click 
 
@@ -48,6 +50,7 @@ $("#gorgonzola").click(function(){
 
     currentScore = currentScore + cheeseBoard[2];
     $("#current-score>h6").html(currentScore);
+    checkWin();
 });
 // Generates a random number on click 
 
@@ -55,6 +58,7 @@ $("#talegio").click(function(){
 
     currentScore = currentScore + cheeseBoard[3];
     $("#current-score>h6").html(currentScore);
+    checkWin();
 
 
 
@@ -63,15 +67,18 @@ $("#talegio").click(function(){
 
  
 // this will/should add to the Wins section
+function checkWin(){
+  if (currentScore == goalScore) {
+      $("#wins").html(userWins);
 
-if (currentScore = goalScore) {
-    $("#wins").html("userWins");
+    }
+   // this will add to the Losses section
+
+   else {
+    userLosses = userLosses + 1;
+    $("#losses").html(userLosses);
+    console.log("it's working!")
   }
- // this will add to the Losses section
-
- else {
-  $("#losses").html("userLosses");
-  console.log("it's working!")
 }
 
 
